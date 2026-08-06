@@ -1,7 +1,5 @@
 Hi, I'm **Lazizbek Ergashev**, a software engineer and open source contributor from Uzbekistan. I currently work remotely on projects for clients across **the USA, Canada, France, the UK, and Australia**.
 
-![Profile views](https://komarev.com/ghpvc/?username=lazerg&label=Profile%20views&color=0e75b6&style=flat)
-
 ---
 
 My team and I build all kinds of projects, from **CRM systems** to **complex AI solutions**. Got a project in mind? Reach me directly at `lazerg2@gmail.com`.
@@ -15,3 +13,7 @@ My team and I build all kinds of projects, from **CRM systems** to **complex AI 
 - **[Laravel](https://github.com/laravel/framework)**: fixed appended accessors receiving `null` inside `toArray()` ([#60921](https://github.com/laravel/framework/pull/60921))
 - **[Tauri](https://github.com/tauri-apps/tauri)**: fixed the build target directory resolution on newer Rust nightlies ([#15831](https://github.com/tauri-apps/tauri/pull/15831))
 - **[Ant Design](https://github.com/ant-design/ant-design)**: removed the unusable per-step render types on the Tour component ([#58859](https://github.com/ant-design/ant-design/pull/58859))
+
+---
+
+![Profile views](https://komarev.com/ghpvc/?username=lazerg&label=Profile%20views&color=0e75b6&style=flat)
