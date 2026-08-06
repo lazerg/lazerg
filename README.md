@@ -1,5 +1,5 @@
-Hello, I am Lazizbek Ergashev, Professional Software Engineer and open source contributor from Uzbekistan. At the moment I am working remotely in Swedish company [danads.com](https://danads.com).
+Hi, I'm Lazizbek Ergashev, a software engineer and open source contributor from Uzbekistan. I currently work remotely for [danads.com](https://danads.com), a Swedish company.
 
 ---
 
-I and my team do various projects starting from CRM and complex AI solutions, if you have a project you can contact me directly at: lazerg2@gmail.com
+My team and I build all kinds of projects, from CRM systems to complex AI solutions. Got a project in mind? Reach me directly at lazerg2@gmail.com.
