@@ -12,7 +12,7 @@ My team and I build all kinds of projects, from **CRM systems** to **complex AI 
 - **[Angular](https://github.com/angular/angular)**: corrected the supported Node.js version listed in the install docs ([#70075](https://github.com/angular/angular/pull/70075))
 - **[Laravel](https://github.com/laravel/framework)**: fixed appended accessors receiving `null` inside `toArray()` ([#60921](https://github.com/laravel/framework/pull/60921))
 - **[Tauri](https://github.com/tauri-apps/tauri)**: fixed the build target directory resolution on newer Rust nightlies ([#15831](https://github.com/tauri-apps/tauri/pull/15831))
-- **[Ant Design](https://github.com/ant-design/ant-design)**: removed the unusable per-step render types on the Tour component ([#58859](https://github.com/ant-design/ant-design/pull/58859))
+- **[PHP](https://github.com/php/php-src)**: fixed a `musttail` crash in `zend_runtime_jit()` inside the tail-call VM ([#23054](https://github.com/php/php-src/pull/23054))
 
 ---
 
