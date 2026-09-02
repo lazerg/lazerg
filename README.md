@@ -9,6 +9,8 @@ My team and I build all kinds of projects, from **CRM systems** to **complex AI 
 ## Latest contributions
 
 **laravel/framework**
+- [#61405](https://github.com/laravel/framework/pull/61405): [13.x] Restore the container instance after route:cache boots a fresh application
+- [#61397](https://github.com/laravel/framework/pull/61397): [12.x] Fix TypeError in userFromRecaller() when the recaller matches no user
 - [#61201](https://github.com/laravel/framework/pull/61201): [13.x] Keep the assertion failure message when session errors are JSON serialized
 - [#61139](https://github.com/laravel/framework/pull/61139): [13.x] Avoid cross-slot reads when checking paused queues
 - [#60921](https://github.com/laravel/framework/pull/60921): [13.x] Fix appended accessors receiving null in toArray()
