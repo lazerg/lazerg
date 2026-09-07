@@ -1,14 +1,23 @@
-Hi, I'm **Lazizbek Ergashev**, a software engineer and open source contributor from Uzbekistan. I currently work remotely on projects for clients across **the USA, Canada, France, the UK, and Australia**.
+## About Me (⭐ Open to offers)
 
----
+I build reliable, production-grade software for companies that can't afford downtime, over 10 years shipping enterprise and freelance projects for clients in **🇺🇸 USA, 🇨🇦 Canada, 🇬🇧 UK, 🇫🇷 France, 🇦🇺 Australia**, and beyond.
 
-My team and I build all kinds of projects, from **CRM systems** to **complex AI solutions**. Got a project in mind? Reach me directly at `lazerg2@gmail.com` or on Telegram at [@lazizbek_ergashev](https://t.me/lazizbek_ergashev).
+**Have a project or an offer?** Email me at `lazerg2@gmail.com`, or message [@lazizbek_ergashev](https://t.me/lazizbek_ergashev) on Telegram for an instant reply.
 
 ---
 
 ## Latest contributions
 
-**laravel/framework**
+🚀 I spend my free time hunting bugs and shipping fixes to the open source tools I rely on daily, my small way of paying the community back.
+
+**`php/php-src`**
+- [#23593](https://github.com/php/php-src/pull/23593): Exclude zend_gdb.c from code coverage
+- [#23445](https://github.com/php/php-src/pull/23445): Fix GH-23444: pdo_odbc does not convert Unicode data outside Windows
+- [#23302](https://github.com/php/php-src/pull/23302): Fix GH-23301: nested "yield from" repeats a value after "yield from []"
+- [#23329](https://github.com/php/php-src/pull/23329): session: fix create_sid()/validateId() check depending on interface order
+- [#23197](https://github.com/php/php-src/pull/23197): Fix stack overflow in count() with COUNT_RECURSIVE and deep arrays
+
+**`laravel/framework`**
 - [#61405](https://github.com/laravel/framework/pull/61405): [13.x] Restore the container instance after route:cache boots a fresh application
 - [#61397](https://github.com/laravel/framework/pull/61397): [12.x] Fix TypeError in userFromRecaller() when the recaller matches no user
 - [#61201](https://github.com/laravel/framework/pull/61201): [13.x] Keep the assertion failure message when session errors are JSON serialized
@@ -17,33 +26,26 @@ My team and I build all kinds of projects, from **CRM systems** to **complex AI 
 - [#60815](https://github.com/laravel/framework/pull/60815): [13.x] Fix resolveClassAttribute() cache key omitting the property
 - [#60574](https://github.com/laravel/framework/pull/60574): Clear transaction manager state on disconnect
 
-**Others in the Laravel ecosystem**
-- [laravel/ai#945](https://github.com/laravel/ai/pull/945): Store uploaded files from their path instead of base64 encoding them
-- [laravel/tinker#213](https://github.com/laravel/tinker/pull/213): [2.x] Bump minimum PsySH version
-- [laravel/tinker#212](https://github.com/laravel/tinker/pull/212): Bump minimum PsySH version
-- [laravel/boost#922](https://github.com/laravel/boost/pull/922): Ignore the connection table prefix when reading table details
-- [laravel/ai#866](https://github.com/laravel/ai/pull/866): Handle Mistral responses that return content as a list of blocks
-- [laravel/mcp#294](https://github.com/laravel/mcp/pull/294): Prompt for route parameter values in mcp:inspector
-- [laravel/horizon#1810](https://github.com/laravel/horizon/pull/1810): [5.x] Fix `RedisQueue::later()` never passing the delay to the payload
-- [laravel/pint#479](https://github.com/laravel/pint/pull/479): Keep a wrapped attribute's body in place when collapsing the tag
-- [laravel/boost#901](https://github.com/laravel/boost/pull/901): Handle signaled process when detecting test enforcement
-- [laravel/boost#913](https://github.com/laravel/boost/pull/913): Correct the Inertia CSRF guidance in the best practices skill
-- [laravel/pint#477](https://github.com/laravel/pint/pull/477): Keep multiline Blade directive arguments stable across runs
-- [laravel/octane#1152](https://github.com/laravel/octane/pull/1152): fix: prevent malformed multipart request from crashing the frankenphp worker
-- [laravel/mcp#262](https://github.com/laravel/mcp/pull/262): Fix nested OAuth resource path with preceding route parameters
-- [laravel/octane#1148](https://github.com/laravel/octane/pull/1148): Update the existing OCTANE_SERVER value on install
-- [laravel/sail#883](https://github.com/laravel/sail/pull/883): [1.x] Fix MongoDB failing to restart by persisting the configdb volume
-- [laravel/telescope#1745](https://github.com/laravel/telescope/pull/1745): [5.x] Order deletes when pruning and clearing to prevent deadlocks
-- [laravel/cpx#20](https://github.com/laravel/cpx/pull/20): Add coverage for positional arguments with multiple binaries
-- [laravel/telescope#1744](https://github.com/laravel/telescope/pull/1744): [5.x] Normalize dashboard JavaScript line endings
-- [laravel/echo#530](https://github.com/laravel/echo/pull/530): Fix presence and whisper examples in echo-react Boost skill
-- [laravel/socialite#785](https://github.com/laravel/socialite/pull/785): Fix undefined array key error in LinkedIn provider
-- [laravel/mcp#254](https://github.com/laravel/mcp/pull/254): Allow OAuth client registration without a client name
-- [laravel/echo#529](https://github.com/laravel/echo/pull/529): Replace socket.io-client imports with a local type shim in echo.d.ts
-- [laravel/cashier-stripe#1858](https://github.com/laravel/cashier-stripe/pull/1858): Fix trial_ends_at not being cleared when trial_end is null in webhook payload
-- [laravel/pint#449](https://github.com/laravel/pint/pull/449): Write Issues to Stderr When --quiet Is Set
-- [laravel/prompts#248](https://github.com/laravel/prompts/pull/248): Print completion line after task finishes
-- [laravel/prompts#249](https://github.com/laravel/prompts/pull/249): Use static rendering for Spinner when output is not decorated
+**`symfony/symfony`**
+- [#65879](https://github.com/symfony/symfony/pull/65879): [Mailer][Sweego] Add support for CC and BCC recipients
+- [#65859](https://github.com/symfony/symfony/pull/65859): [Security] Reset the login rate limiter on successful login with a peekable limiter
+- [#65840](https://github.com/symfony/symfony/pull/65840): [Scheduler] Fix duplicated schedule message when multiple methods in a class use #[AsCronTask]
+- [#65837](https://github.com/symfony/symfony/pull/65837): [PropertyInfo] Do not prefer a method returning the declaring class as the property accessor
+- [#65835](https://github.com/symfony/symfony/pull/65835): [VarDumper] Fix dumping class names to the dump server
+
+**`nodejs/node`**
+- [#65605](https://github.com/nodejs/node/pull/65605): buffer: pad aligned allocations by a multiple of 8
+- [#65245](https://github.com/nodejs/node/pull/65245): test: add coverage for removeEventListener boolean capture
+- [#64878](https://github.com/nodejs/node/pull/64878): dns: validate address type in lookupService
+- [#65357](https://github.com/nodejs/node/pull/65357): test_runner: fix junit report on empty diagnostic
+- [#65283](https://github.com/nodejs/node/pull/65283): doc: add missing `added:` tags to `fs.lchmod`
+
+**`vuejs/core`**
+- [#15341](https://github.com/vuejs/core/pull/15341): fix(runtime-vapor): do not skip the initial DOM prop set
+- [#15340](https://github.com/vuejs/core/pull/15340): fix(runtime-vapor): set value as attribute so form reset restores it
+- [#15283](https://github.com/vuejs/core/pull/15283): fix(runtime-vapor): dispose component v-for item resources on removal
+- [#15259](https://github.com/vuejs/core/pull/15259): fix(compiler-vapor): keep the space after a quoted attribute value
+- [#15258](https://github.com/vuejs/core/pull/15258): fix(compiler-vapor): wrap custom directive value in parens
 
 ---
 
