@@ -11,13 +11,17 @@ I build reliable, production-grade software for companies that can't afford down
 🚀 I spend my free time hunting bugs and shipping fixes to the open source tools I rely on daily, my small way of paying the community back.
 
 **`php/php-src`**
+- [#24155](https://github.com/php/php-src/pull/24155): Fix GH-24154: Function JIT ++/-- on typed property holding a reference
+- [#24064](https://github.com/php/php-src/pull/24064): Fix GH-24063: SCCP merges 0.0 and -0.0 into a single constant
+- [#23987](https://github.com/php/php-src/pull/23987): Fix GH-23986: Clear the realpath cache in the child after pcntl_fork()
+- [#23963](https://github.com/php/php-src/pull/23963): Fix GH-23962: Don't roll back a persistent PDO handle still in use
 - [#23593](https://github.com/php/php-src/pull/23593): Exclude zend_gdb.c from code coverage
-- [#23445](https://github.com/php/php-src/pull/23445): Fix GH-23444: pdo_odbc does not convert Unicode data outside Windows
-- [#23302](https://github.com/php/php-src/pull/23302): Fix GH-23301: nested "yield from" repeats a value after "yield from []"
-- [#23329](https://github.com/php/php-src/pull/23329): session: fix create_sid()/validateId() check depending on interface order
-- [#23197](https://github.com/php/php-src/pull/23197): Fix stack overflow in count() with COUNT_RECURSIVE and deep arrays
 
 **`laravel/framework`**
+- [#61859](https://github.com/laravel/framework/pull/61859): [13.x] Fix parallel testing with PHPUnit 13.4
+- [#61769](https://github.com/laravel/framework/pull/61769): [13.x] Fix `Builder::with()` when a null callback is passed explicitly
+- [#61708](https://github.com/laravel/framework/pull/61708): [13.x] Don't swallow deadlocks in `DatabaseLock` inside a transaction
+- [#61597](https://github.com/laravel/framework/pull/61597): [13.x] Fix Eloquent Collection duplicates() with a key or callback
 - [#61405](https://github.com/laravel/framework/pull/61405): [13.x] Restore the container instance after route:cache boots a fresh application
 - [#61397](https://github.com/laravel/framework/pull/61397): [12.x] Fix TypeError in userFromRecaller() when the recaller matches no user
 - [#61201](https://github.com/laravel/framework/pull/61201): [13.x] Keep the assertion failure message when session errors are JSON serialized
@@ -27,25 +31,25 @@ I build reliable, production-grade software for companies that can't afford down
 - [#60574](https://github.com/laravel/framework/pull/60574): Clear transaction manager state on disconnect
 
 **`symfony/symfony`**
-- [#65879](https://github.com/symfony/symfony/pull/65879): [Mailer][Sweego] Add support for CC and BCC recipients
-- [#65859](https://github.com/symfony/symfony/pull/65859): [Security] Reset the login rate limiter on successful login with a peekable limiter
-- [#65840](https://github.com/symfony/symfony/pull/65840): [Scheduler] Fix duplicated schedule message when multiple methods in a class use #[AsCronTask]
-- [#65837](https://github.com/symfony/symfony/pull/65837): [PropertyInfo] Do not prefer a method returning the declaring class as the property accessor
-- [#65835](https://github.com/symfony/symfony/pull/65835): [VarDumper] Fix dumping class names to the dump server
+- [#66942](https://github.com/symfony/symfony/pull/66942): [Console] Escape pipes and newlines in markdown tables
+- [#66830](https://github.com/symfony/symfony/pull/66830): [Yaml] Throw a ParseException on keys starting with a NUL byte when parsing mappings as objects
+- [#66710](https://github.com/symfony/symfony/pull/66710): [Security] Log the access tokens rejected by OidcTokenHandler at the debug level
+- [#66720](https://github.com/symfony/symfony/pull/66720): [ExpressionLanguage] Fix nesting level of chained ternaries
+- [#66683](https://github.com/symfony/symfony/pull/66683): [FrameworkBundle] Inject the clock into comparison and range validators
 
 **`nodejs/node`**
-- [#65605](https://github.com/nodejs/node/pull/65605): buffer: pad aligned allocations by a multiple of 8
-- [#65245](https://github.com/nodejs/node/pull/65245): test: add coverage for removeEventListener boolean capture
-- [#64878](https://github.com/nodejs/node/pull/64878): dns: validate address type in lookupService
-- [#65357](https://github.com/nodejs/node/pull/65357): test_runner: fix junit report on empty diagnostic
-- [#65283](https://github.com/nodejs/node/pull/65283): doc: add missing `added:` tags to `fs.lchmod`
+- [#66694](https://github.com/nodejs/node/pull/66694): crypto: fix X509 curve name crash for non-NIST curves
+- [#66565](https://github.com/nodejs/node/pull/66565): module: fix require of imports with package map
+- [#66550](https://github.com/nodejs/node/pull/66550): test_runner: report load errors with --test-isolation=none
+- [#66314](https://github.com/nodejs/node/pull/66314): http2: submit RST_STREAM before emitting 'aborted'
+- [#65640](https://github.com/nodejs/node/pull/65640): events: fix addAbortListener for aborted signals
 
 **`vuejs/core`**
-- [#15341](https://github.com/vuejs/core/pull/15341): fix(runtime-vapor): do not skip the initial DOM prop set
-- [#15340](https://github.com/vuejs/core/pull/15340): fix(runtime-vapor): set value as attribute so form reset restores it
-- [#15283](https://github.com/vuejs/core/pull/15283): fix(runtime-vapor): dispose component v-for item resources on removal
-- [#15259](https://github.com/vuejs/core/pull/15259): fix(compiler-vapor): keep the space after a quoted attribute value
-- [#15258](https://github.com/vuejs/core/pull/15258): fix(compiler-vapor): wrap custom directive value in parens
+- [#15634](https://github.com/vuejs/core/pull/15634): fix(runtime-core): detect new prop keys when comparing full props
+- [#15711](https://github.com/vuejs/core/pull/15711): fix(KeepAlive): unmount pruned current component when its vnode was cloned on mount
+- [#15604](https://github.com/vuejs/core/pull/15604): fix(compiler-sfc): error when defineModel prop options reference a destructured prop
+- [#15753](https://github.com/vuejs/core/pull/15753): fix(runtime-vapor): run app mounted hooks after hydration ends
+- [#15595](https://github.com/vuejs/core/pull/15595): fix(vapor): hydrate custom element children
 
 ---
 
