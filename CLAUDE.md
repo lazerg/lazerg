@@ -8,9 +8,12 @@ GitHub profile README. `README.md` is the only content that matters, it renders 
   backticks) followed by a list, in this fixed order:
   1. `php/php-src`: the 5 most recently merged PRs by this account, hard cap of 5.
   2. `laravel/framework`: every merged PR by this account, no cap.
-  3. `symfony/symfony`: the 5 most recently merged PRs by this account, hard cap of 5.
+  3. `symfony/*`: the 10 most recently merged PRs by this account across `symfony/symfony` and every other `symfony/*`
+     package (e.g. `symfony/ai`), hard cap of 10. Entries from a non-core package use `symfony/pkg#N` as link text.
   4. `nodejs/node`: the 5 most recently merged PRs by this account, hard cap of 5.
   5. `vuejs/core`: the 5 most recently merged PRs by this account, hard cap of 5.
+  6. `react/react`: the 5 most recently merged PRs by this account, hard cap of 5.
+  7. `react/react-native`: the 5 most recently merged PRs by this account, hard cap of 5.
 - Sort each section by merge date, newest first. That is the only sort key.
 - Format per entry: `- [#N](url): title`.
 - To refresh a section: `gh search prs --author=lazerg --repo=<owner/repo> --merged --json number,title,url`, then

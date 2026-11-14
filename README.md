@@ -11,13 +11,14 @@ I build reliable, production-grade software for companies that can't afford down
 🚀 I spend my free time hunting bugs and shipping fixes to the open source tools I rely on daily, my small way of paying the community back.
 
 **`php/php-src`**
-- [#24155](https://github.com/php/php-src/pull/24155): Fix GH-24154: Function JIT ++/-- on typed property holding a reference
-- [#24064](https://github.com/php/php-src/pull/24064): Fix GH-24063: SCCP merges 0.0 and -0.0 into a single constant
-- [#23987](https://github.com/php/php-src/pull/23987): Fix GH-23986: Clear the realpath cache in the child after pcntl_fork()
-- [#23963](https://github.com/php/php-src/pull/23963): Fix GH-23962: Don't roll back a persistent PDO handle still in use
-- [#23593](https://github.com/php/php-src/pull/23593): Exclude zend_gdb.c from code coverage
+- [#25239](https://github.com/php/php-src/pull/25239): Fix GH-25238: ReflectionProperty::isInitialized() skips lazy init once cached
+- [#25087](https://github.com/php/php-src/pull/25087): Fix GH-25086: IoPoll kqueue backend leaks memory on every modifyEvents()
+- [#24614](https://github.com/php/php-src/pull/24614): Fix GH-24609: mysqlnd OK packets without info rejected on x32 builds
+- [#25012](https://github.com/php/php-src/pull/25012): Fix GH-25007: PFA named args in constant expression write out of bounds
+- [#25027](https://github.com/php/php-src/pull/25027): Fix GH-25023: ZEND_CONTAINER_OF() fails to compile with -std=c11
 
 **`laravel/framework`**
+- [#62299](https://github.com/laravel/framework/pull/62299): [13.x] Fix JSON:API resource collections wrapping plain objects
 - [#61859](https://github.com/laravel/framework/pull/61859): [13.x] Fix parallel testing with PHPUnit 13.4
 - [#61769](https://github.com/laravel/framework/pull/61769): [13.x] Fix `Builder::with()` when a null callback is passed explicitly
 - [#61708](https://github.com/laravel/framework/pull/61708): [13.x] Don't swallow deadlocks in `DatabaseLock` inside a transaction
@@ -30,19 +31,24 @@ I build reliable, production-grade software for companies that can't afford down
 - [#60815](https://github.com/laravel/framework/pull/60815): [13.x] Fix resolveClassAttribute() cache key omitting the property
 - [#60574](https://github.com/laravel/framework/pull/60574): Clear transaction manager state on disconnect
 
-**`symfony/symfony`**
-- [#66942](https://github.com/symfony/symfony/pull/66942): [Console] Escape pipes and newlines in markdown tables
-- [#66830](https://github.com/symfony/symfony/pull/66830): [Yaml] Throw a ParseException on keys starting with a NUL byte when parsing mappings as objects
-- [#66710](https://github.com/symfony/symfony/pull/66710): [Security] Log the access tokens rejected by OidcTokenHandler at the debug level
-- [#66720](https://github.com/symfony/symfony/pull/66720): [ExpressionLanguage] Fix nesting level of chained ternaries
-- [#66683](https://github.com/symfony/symfony/pull/66683): [FrameworkBundle] Inject the clock into comparison and range validators
+**`symfony/*`**
+- [symfony/ai#2868](https://github.com/symfony/ai/pull/2868): [AI Bundle] Keep the tool call listeners working without the security or validator service
+- [symfony/ai#2816](https://github.com/symfony/ai/pull/2816): [Agent] Fix Redis message store staying in WATCH and overwriting keys it cannot read
+- [#68142](https://github.com/symfony/symfony/pull/68142): [DoctrineBridge] Fix UniqueEntity default error path when fields is a mapping
+- [#67988](https://github.com/symfony/symfony/pull/67988): [Messenger] Fix parallel workers crashing on errors that cannot be serialized
+- [#68023](https://github.com/symfony/symfony/pull/68023): [AssetMapper] Resolve the env vars of `asset_mapper.server` when the container is compiled
+- [#67966](https://github.com/symfony/symfony/pull/67966): [HttpKernel] Fix the bundle cache dumped by `parent::dumpContainer()` in a `MicroKernelTrait` kernel
+- [#67974](https://github.com/symfony/symfony/pull/67974): [TypeInfo] Fix infinite recursion in `Type::fromValue()` with cyclic values
+- [#67925](https://github.com/symfony/symfony/pull/67925): [HttpClient] Keep the response decorated by TraceableResponse usable until it is freed
+- [#67845](https://github.com/symfony/symfony/pull/67845): [Security] Fix the login throttling message announcing one minute too many
+- [#67864](https://github.com/symfony/symfony/pull/67864): [Cache] Fix fetching long keys with MemcachedAdapter::getItems()
 
 **`nodejs/node`**
+- [#66769](https://github.com/nodejs/node/pull/66769): sqlite: retry busy or locked backup steps
+- [#66895](https://github.com/nodejs/node/pull/66895): src: fix build with `--shared-brotli`
+- [#66671](https://github.com/nodejs/node/pull/66671): crypto: do not leak scrypt param check errors
 - [#66694](https://github.com/nodejs/node/pull/66694): crypto: fix X509 curve name crash for non-NIST curves
 - [#66565](https://github.com/nodejs/node/pull/66565): module: fix require of imports with package map
-- [#66550](https://github.com/nodejs/node/pull/66550): test_runner: report load errors with --test-isolation=none
-- [#66314](https://github.com/nodejs/node/pull/66314): http2: submit RST_STREAM before emitting 'aborted'
-- [#65640](https://github.com/nodejs/node/pull/65640): events: fix addAbortListener for aborted signals
 
 **`vuejs/core`**
 - [#15634](https://github.com/vuejs/core/pull/15634): fix(runtime-core): detect new prop keys when comparing full props
@@ -50,6 +56,19 @@ I build reliable, production-grade software for companies that can't afford down
 - [#15604](https://github.com/vuejs/core/pull/15604): fix(compiler-sfc): error when defineModel prop options reference a destructured prop
 - [#15753](https://github.com/vuejs/core/pull/15753): fix(runtime-vapor): run app mounted hooks after hydration ends
 - [#15595](https://github.com/vuejs/core/pull/15595): fix(vapor): hydrate custom element children
+
+**`react/react`**
+- [#38025](https://github.com/react/react/pull/38025): [rust-compiler] Fix non-ASCII panic in is_ref_like_name
+- [#38007](https://github.com/react/react/pull/38007): [RN] Call dispatchNativeEvent when the event target is null
+- [#37730](https://github.com/react/react/pull/37730): [Flight] Fix reviving errors without stack frames in debug info
+- [#37389](https://github.com/react/react/pull/37389): [DOM] Copy `source` onto the synthetic toggle event
+
+**`react/react-native`**
+- [#59955](https://github.com/react/react-native/pull/59955): Retry SwiftPM artifact version lookups on transient failures
+- [#59954](https://github.com/react/react-native/pull/59954): Expose `rrc_scrollview` via prefab
+- [#59953](https://github.com/react/react-native/pull/59953): Dedupe @typescript-eslint/utils for eslint-plugin-jest in yarn.lock
+- [#59760](https://github.com/react/react-native/pull/59760): Look up props read out of order by name in RawPropsParser
+- [#59709](https://github.com/react/react-native/pull/59709): Add bun lockfiles to default lockFiles in autolinkLibrariesFromCommand
 
 ---
 
